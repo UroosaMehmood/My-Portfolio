@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url('assets/font/FootlightMTLight.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    display: block;
+    height: 70px;
+}
+
+.nav-link {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    align-items: center;
+    width: 60vw;
+    padding-right: 50px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+    text-transform: capitalize;
+    font-size: clamp(18px, 2vw, 28px);
+    font-family: var(--text-font);
+    transition: 0.3s linear;
+}
+
+.link:hover {
+    transition: 0.3s linear;
+    color: rgb(190, 160, 82);
+    text-decoration: underline;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.fa-bars {
+    color: white;
+    padding-right: 20px;
+    font-size: 32px;
+}
+
+
+section {
+    padding: 30px ;
+    height: 100vh;
+    align-content: center;
+    width: 100%;
+}
+section:nth-of-type(odd){
+    background-color:  rgb(190, 160, 82);;
+}
+h2{
+    font-size: clamp(30px, 5vw, 60px);
+}
+h3{
+    font-size: clamp(18px, 2.7vw, 36px);
+}
+ h2 , h3{
+    font-family: myFont;
+    color:black ;
+    text-transform: capitalize;
+}
+ p {
+    font-family: Poppins;
+    font-size: clamp(16px, 2vw, 24px);
+    text-transform: capitalize;
+}
+.hero{
+    height: calc(100vh - 70px);
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    width: 50%;
+    padding: 20px;
+}
+.img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.h-col{
+    padding-left: 100px;
+}
+.h-col p{
+    color: white;
+}
+.h-link{
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    margin-top: 20px;
+    font-family: Poppins;
+    font-size: clamp(12px, 1.6vw, 20px);
+    
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    color:white;
+    text-transform: capitalize;
+    border-radius: 30px;
+    background-color:black;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+}
+.btn:hover {
+    background-color: black;
+    color: rgb(190, 160, 82);
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s linear;
+}
+.a-col{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10%;
+    row-gap: 30px;
+   
+}
+.a-col i{
+    font-size: 80px;
+    transition: 0.3s linear;
+}
+.a-col i:hover{
+    color:  rgb(190, 160, 82);
+    transition: 0.3s linear;
+}
+.service{
+    text-align: center;
+}
+.s-col{
+    text-align: center;
+    margin: 50px 10px;
+    padding: 20px;
+    background-color: black;
+}
+.s-col img{
+    display: block;
+    width: 150px;
+    margin: auto;
+    filter: invert();
+}
+.s-col p{
+    color: rgb(190, 160, 82);
+}
+#form{
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgb(190, 160, 82);
+    margin: auto;
+    display: block;
+    width: 500px;
+}
+#form h3{
+    text-align: center;
+}
+#form label{
+    font-family: Poppins;
+    color: black;
+    font-size: clamp(16px, 2vw, 24px);
+}
+#form input, #form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color:rgb(190, 160, 82);
+    font-family: Poppins;
+}
+#form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(190, 160, 82);
+    color: black;
+    font-family: Poppins;
+    font-size: clamp(16px, 2vw, 24px);
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+footer:hover{
+    color: rgb(190, 160, 82);
+    transition: 0.5s linear;
+}
+@media screen and (max-width: 768px) {
+    section, .hero{
+        height: fit-content;
+        padding: 20px;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    #nav-toggle {
+        display: flex;
+    }
+
+    .active {
+        position: absolute;
+        width: 100vw;
+        height: calc( 100vh - 69px);
+        z-index: 1000;
+        background-color:black;
+        left: 0px;
+        top: 69px;
+        padding: 10px 30px;
+        list-style-type: none;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .h-col{
+    padding-left: 30px;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    
+    .hero .row, .about .row {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .service .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+        padding: 0;
+        justify-items: center;
+    }
+    .s-col{
+        padding: 20px;
+        margin: 20px;
+    }
+    .img {
+        width: 100%;
+    }
+    .h-col {
+        padding-left: 10px;
+    }
+    .h-link{
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    #form{
+        width: 100%;
+    }
+}

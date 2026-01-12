@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <img class="nav-logo" src="assets/image/logo.png" alt="">
+        </a>
+        <nav>
+            <ul class="nav-link " id="toggle">
+                <li><a class="link" href="#hero">home</a></li>
+                <li><a class="link" href="#about">about</a></li>
+                <li><a class="link" href="#service">services</a></li>
+                <li><a class="link" href="#contact">contact</a></li>
+            </ul>
+            <div id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="row">
+                <div class="col h-col">
+                    <p>hi, my self</p>
+                    <h2>Uroosa Mehmood</h2>
+                    <p>website designer & developer</p>
+                    <div class="h-link">
+                        <a class="btn" href="mailto:mehmooduroosa393@gmail.com">Contact Me</a>
+                        <a class="btn" href="assets/image/Curriculam Vitae.pdf" target="_blank">My Resume</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/image/image.jfif" class="img" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col a-col">
+                    
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-brands fa-php"></i>
+                        <i class="fa-brands fa-wordpress"></i>
+                        <i class="fa-brands fa-laravel"></i>
+                   
+                </div>
+                <div class="col">
+                    <h2>about me</h2>
+                    <p>I'm a dedicated web developer with hands-on experience in front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, and frameworks like Bootstrap, I specialize in building responsive and user-friendly websites. I also work with back-end tools like PHP, MySQL, and Laravel, and I'm comfortable using Git and GitHub for version control. With a solid understanding of WordPress development and a passion for clean, efficient code, I strive to create seamless digital experiences that deliver both function and form.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="service" id="service">
+            <h2>Services</h2>
+            <div class="row">
+                <div class="col s-col">
+                    <img src="assets/image/web.png" alt="">
+                    <h3>website development</h3>
+                    <p>develop custom websites and web applications using modern technologies.</p>
+                </div>
+                <div class="col s-col">
+                    <img src="assets/image/systems.png" alt="">
+                    <h3>management system</h3>
+                    <p>create efficient management systems to streamline business processes.</p>
+                </div>
+                <div class="col s-col">
+                    <img src="assets/image/analisys.png" alt="">
+                    <h3>data analysis</h3>
+                    <p>analyze data to provide insights and support decision-making.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact"> 
+                    <form id="form">
+                        <h3>Contact Form</h3>
+                        <label for="name">Name</label>  
+                        <br>
+                        <input type="text" name="name" placeholder="ex: John Doe" required> 
+                        <br>
+                        <label for="email">Email</label>    
+                        <br>
+                        <input type="email" name="email" placeholder="ex: john@example.com" required>   
+                        <br>
+                        <label for="message">Message</label>    
+                        <br>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>   
+                        <br>
+                        <button type="submit">Send Message</button> 
+                        <br>
+                    </form> 
+        </section>
+    </main>
+    <footer>
+        
+                <p>© 2025 Uroosa Mehmood. All rights reserved.</p>
+            
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
